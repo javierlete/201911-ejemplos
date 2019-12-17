@@ -2,8 +2,8 @@ import { Component, Input } from '@angular/core';
 
 @Component({
     selector: 'app-titulo',
-    template: '<h1>{{texto}}</h1>',
-    styles: [ 'h1 { text-transform: uppercase; }' ]
+    templateUrl: './titulo.component.html',
+    styleUrls: [ './titulo.component.css' ]
 })
 export class TituloComponent {
     @Input() texto: string;

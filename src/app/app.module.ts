@@ -12,6 +12,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { TableComponent } from './table/table.component';
 import { TreeComponent } from './tree/tree.component';
 import { DragDropComponent } from './drag-drop/drag-drop.component';
+import { TituloComponent } from './titulo.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,8 @@ import { DragDropComponent } from './drag-drop/drag-drop.component';
     NavigationComponent,
     TableComponent,
     TreeComponent,
-    DragDropComponent
+    DragDropComponent,
+    TituloComponent
   ],
   imports: [
     BrowserModule,

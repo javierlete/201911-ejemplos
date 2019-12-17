@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
     selector: 'app-titulo',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
     styles: [ 'h1 { text-transform: uppercase; }' ]
 })
 export class TituloComponent {
-    texto = 'Bienvenidos';
+    @Input() texto: string;
 }

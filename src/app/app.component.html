@@ -14,7 +14,10 @@
     <button mat-menu-item>Dos</button>
   </mat-sidenav>
   <mat-sidenav-content>
-    <app-titulo></app-titulo>
+    <app-titulo texto="{{title}}"></app-titulo>
+    <!-- <app-titulo texto="ejemplos"> -->
+    <app-titulo [texto]="title"></app-titulo>
+    <!-- tituloComponent.texto = title -->
     <app-drag-drop></app-drag-drop>
     <app-tree></app-tree>
     <app-table></app-table>

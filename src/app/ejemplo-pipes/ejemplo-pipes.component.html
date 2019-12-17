@@ -1,1 +1,16 @@
-<p>ejemplo-pipes works!</p>
+<app-titulo texto="Ejemplos pipes"></app-titulo>
+
+<pre>
+    Texto: {{ varTexto | uppercase }}, {{ varTexto | lowercase }}, {{ varTexto | titlecase }}
+    Fecha: {{ varFecha | date:formato }}, {{ varFecha | date:'fullDate'}}
+    Moneda: {{ varMoneda | currency:'EUR':'€':'1.2-2':'es-ES' }}
+    Decimal: {{ varDecimal | number:'1.2-2':'es-ES' }}
+    Porcentaje: {{ varPorcentaje | percent:'2.0-0':'es-ES' }}
+    Objeto: {{ varObjeto | json }}
+    Texto: {{ varTexto | slice:0:5 }}...
+    Objeto: {{ varObjeto | keyvalue | json }}
+
+    Mensajes: {{ varMensajes | i18nPlural:pluralMensajes}}
+
+    EURO: {{ varMoneda | euro:5:6 }}
+</pre>

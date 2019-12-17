@@ -14,6 +14,12 @@ import { TreeComponent } from './tree/tree.component';
 import { DragDropComponent } from './drag-drop/drag-drop.component';
 import { TituloComponent } from './titulo/titulo.component';
 import { EjemploPipesComponent } from './ejemplo-pipes/ejemplo-pipes.component';
+
+import { registerLocaleData } from '@angular/common';
+import localeEs from '@angular/common/locales/es';
+import { EuroPipe } from './euro.pipe';
+
+registerLocaleData(localeEs, 'es');
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +30,8 @@ import { EjemploPipesComponent } from './ejemplo-pipes/ejemplo-pipes.component';
     TreeComponent,
     DragDropComponent,
     TituloComponent,
-    EjemploPipesComponent
+    EjemploPipesComponent,
+    EuroPipe
   ],
   imports: [
     BrowserModule,

@@ -18,6 +18,7 @@ import { EjemploPipesComponent } from './ejemplo-pipes/ejemplo-pipes.component';
 import { registerLocaleData } from '@angular/common';
 import localeEs from '@angular/common/locales/es';
 import { EuroPipe } from './euro.pipe';
+import { HighlightDirective } from './highlight.directive';
 
 registerLocaleData(localeEs, 'es');
 @NgModule({
@@ -31,7 +32,8 @@ registerLocaleData(localeEs, 'es');
     DragDropComponent,
     TituloComponent,
     EjemploPipesComponent,
-    EuroPipe
+    EuroPipe,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,

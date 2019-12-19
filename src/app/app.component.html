@@ -14,6 +14,9 @@
     <button mat-menu-item>Dos</button>
   </mat-sidenav>
   <mat-sidenav-content>
+    <app-titulo texto="Ejemplo de Output"></app-titulo>
+    <app-login (login)="onLogin($event)"></app-login>
+
     <app-titulo texto="Directivas"></app-titulo>
     <p appHighlight="blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda a voluptatibus quaerat aliquam saepe odio impedit illum illo perferendis deleniti dignissimos consequatur harum velit quia, dolorem nisi porro suscipit ea.</p>
 

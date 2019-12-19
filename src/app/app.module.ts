@@ -19,6 +19,7 @@ import { registerLocaleData } from '@angular/common';
 import localeEs from '@angular/common/locales/es';
 import { EuroPipe } from './euro.pipe';
 import { HighlightDirective } from './highlight.directive';
+import { LoginComponent } from './login/login.component';
 
 registerLocaleData(localeEs, 'es');
 @NgModule({
@@ -33,7 +34,8 @@ registerLocaleData(localeEs, 'es');
     TituloComponent,
     EjemploPipesComponent,
     EuroPipe,
-    HighlightDirective
+    HighlightDirective,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
